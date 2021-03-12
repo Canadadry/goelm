@@ -30,7 +30,7 @@ type Target interface {
 
 This is the same sample as the [Lorca demo counter app](https://github.com/zserge/lorca/tree/master/examples/counter) 
 
-![Lorca Coutner App](examples/counter/counter.gif)
+![Lorca Coutner App](https://github.com/zserge/lorca/tree/master/examples/counter/counter.gif)
 
 ```go
 package main
