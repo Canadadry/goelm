@@ -47,7 +47,10 @@ func View(model interface{}) goelm.Element {
 func Update(m interface{}, event string) (interface{}, string) {
 	c, ok := m.(int)
 	if !ok {
-		panic("fuck")
+		c, ok = Init().(int)
+		if !ok {
+			panic("init func should return an int")
+		}
 	}
 
 	switch event {
