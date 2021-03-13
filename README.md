@@ -1,4 +1,4 @@
-# GoElm
+# Golem
 
 This is a toy project to bring [Elm](https://elm-lang.org) way of build web app into go. 
 
