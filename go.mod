@@ -1,4 +1,4 @@
-module github.com/canadadry/goelm
+module github.com/canadadry/golem
 
 go 1.16
 

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/canadadry/goelm"
+	"github.com/canadadry/golem"
 	"github.com/zserge/lorca"
 )
 
@@ -22,18 +22,18 @@ func Init() interface{} {
 	return int(0)
 }
 
-func View(model interface{}) goelm.Element {
-	return goelm.Div(goelm.Props{Class: "counter-container"},
-		goelm.Div(goelm.Props{Class: "counter", Id: "counter", InnerText: fmt.Sprintf("%v", model)}),
-		goelm.Div(goelm.Props{Class: "btn-row"},
-			goelm.Div(goelm.Props{
+func View(model interface{}) golem.Element {
+	return golem.Div(golem.Props{Class: "counter-container"},
+		golem.Div(golem.Props{Class: "counter", Id: "counter", InnerText: fmt.Sprintf("%v", model)}),
+		golem.Div(golem.Props{Class: "btn-row"},
+			golem.Div(golem.Props{
 				Class:     "btn btn-incr",
 				InnerText: "+1",
 				EventListener: map[string]string{
 					"click": "Plus",
 				},
 			}),
-			goelm.Div(goelm.Props{
+			golem.Div(golem.Props{
 				Class:     "btn btn-decr",
 				InnerText: "-1",
 				EventListener: map[string]string{
@@ -69,7 +69,7 @@ func run() error {
 	}
 	defer ui.Close()
 
-	app := goelm.App{
+	app := golem.App{
 		T: LorcaAsTarget{ui},
 	}
 

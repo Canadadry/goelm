@@ -1,4 +1,4 @@
-package goelm
+package golem
 
 import (
 	"fmt"
