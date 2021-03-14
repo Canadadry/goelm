@@ -58,6 +58,14 @@ func Input(props Props, children ...Element) Element {
 	return createElem("input", props, children...)
 }
 
+func A(props Props, children ...Element) Element {
+	return createElem("a", props, children...)
+}
+
+func Button(props Props, children ...Element) Element {
+	return createElem("button", props, children...)
+}
+
 func Img(props Props, children ...Element) Element {
 	return createElem("img", props, children...)
 }
